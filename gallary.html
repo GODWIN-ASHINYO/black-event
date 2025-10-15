@@ -87,9 +87,9 @@
     <div class="norminate">
       <div class="icon"><img src="IMAGES/logo.jpg" alt=""></div>
       <form action="https://formspree.io/f/xzzraypj" method="POST">
-        <div>FULL NAME<br><input type="text" placeholder="insert name for normination"required></div>
-        <div>TEL<br><input type="tel" placeholder="insert mobile number" required></div>
-        <div>NOMINATION TYPE<br><select>
+        <div>FULL NAME<br><input type="text" name="name" placeholder="insert name for normination"required></div>
+        <div>TEL<br><input type="tel" name="phone" placeholder="insert mobile number" required></div>
+        <div>NOMINATION TYPE<br><select name="event_type">
           <option>GLOBAL YOUTH EXCELLENCE AWARDS</option>
           <option>GHANA PRESTIGIOUS AWARDS</option>
           <option>GLOBAL YOUTH ACHIEVERS AWARDS</option>
@@ -98,7 +98,7 @@
           <option>MR & MRS ELEGANCE</option>
         </select></div>
 
-        <input class="submit" type="submit">
+        <input class="submit" type="submit" value="Submit">
 
       </form>
 
