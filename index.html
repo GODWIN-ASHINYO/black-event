@@ -80,13 +80,13 @@ view Gallery for more info...
     <h2>Book An Event</h2>
     <di class="ca">
       
-       <form id="bookingForm"    action="https://formspree.io/f/xzzraypj " method="POST">
-          <div>Full Name <br><input type="text" required></div>
-          <div>Email address <br><input type="email" required></div>
-          <div>TEL <br><input type="tel" required></div>
-          <div>Event Date <br><input type="date" required></div>
+       <form id="bookingForm"    action="https://formspree.io/f/xzzraypj" method="POST">
+          <div>Full Name <br><input type="text" name="fullname" required></div>
+          <div>Email address <br><input type="email"  name="email"  required></div>
+          <div>TEL <br><input type="tel"  name="phone"      required></div>
+          <div>Event Date <br><input type="date" name="event_date" required></div>
           <div>Event type
-            <select placeholder="jbjb" required>
+            <select name="event_type" required>
               <option>Birthday party</option>
               <option>Corporate </option>
               <option> Wedding</option>
@@ -94,8 +94,8 @@ view Gallery for more info...
             </select>
             
           </div>
-          <div class="ed">Event Details<br><input class="edit"   type="text" required></div>
-          <input class="submit"    placeholder="Submit booking" type="submit">
+          <div class="ed">Event Details<br><input class="edit"   type="text" name="event_details" required></div>
+          <input class="submit"    value="Submit booking" type="submit">
        </form>
         
        
@@ -122,10 +122,10 @@ view Gallery for more info...
     <section class="contactpage" id="contact">
       <h1>Contact Us</h1>
       <form id="contactForm" action="https://formspree.io/f/xzzraypj" method="POST"class="form2">
-        <div><input type="text" placeholder="Your name"required></div>
-        <div><input type="email" placeholder="Your Email" required></div>
-        <div><input type="text" placeholder="Your Message"required></div>
-        <div><input  class="submit"   type="submit" placeholder="Send Message"></div>
+        <div><input type="text" name="name" placeholder="Your name"required></div>
+        <div><input type="email" name="email" placeholder="Your Email" required></div>
+        <div><input type="text" name="Message" placeholder="Your Message"required></div>
+        <div><input  class="submit"   type="submit" value="Send Message"></div>
       </form>
     </section>
     <footer>
